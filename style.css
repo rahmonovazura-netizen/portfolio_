@@ -47,7 +47,6 @@ body {
   object-fit: contain;
   filter: brightness(1) invert(0.1) contrast(1.5);
   mix-blend-mode: color-burn;
-  transition: all 0.3s ease;
 }
 
 .logo img:hover {
@@ -325,4 +324,60 @@ body {
   .project-item {
     height: 300px;
   }
+}
+
+.site-footer {
+  background-color: #222;
+  color: #b3b3b3;
+  padding: 60px 20px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+.footer-column ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-column ul li a:hover {
+  color: #fff;
+}
+.footer-info {
+  margin: 8px 0;
+  font-size: 14px;
+}
+.logo-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.logo-placeholde img {
+  width: 200px;
 }
