@@ -41,12 +41,20 @@ body {
   text-decoration: none;
 }
 
-.logo img {
+.brand-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.logo-placeholder img {
   width: 50px;
   height: 50px;
   object-fit: contain;
   box-sizing: border-box;
   background-color: #000000;
+  border: 3px solid #000000;
   border-radius: 12px;
   padding: 6px;
   filter: brightness(1.2) sepia(1) hue-rotate(15deg) saturate(10)
@@ -55,7 +63,6 @@ body {
     0 8px 16px rgba(0, 119, 255, 0.75),
     0 0 8px rgba(0, 119, 255, 0.4);
 }
-
 .nav-links {
   list-style: none;
   display: flex;
