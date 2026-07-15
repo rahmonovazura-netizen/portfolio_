@@ -326,6 +326,9 @@ body {
   }
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
 .site-footer {
   background-color: #222;
   color: #b3b3b3;
@@ -378,12 +381,6 @@ body {
   line-height: 1;
   margin-bottom: 20px;
 }
-
-.logo-placeholde {
-  margin: 8px 0;
-  font-size: 14px;
-}
-
 .logo-placeholde img {
   width: 200px;
 }
