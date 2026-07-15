@@ -320,5 +320,16 @@ body {
   margin-bottom: 20px;
 }
 .logo-placeholde img {
-  width: 200px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  box-sizing: border-box;
+  background-color: #000000;
+  border-radius: 12px;
+  padding: 6px;
+  filter: brightness(1.2) sepia(1) hue-rotate(15deg) saturate(10)
+    drop-shadow(0 0 4px rgba(255, 230, 0, 0.8));
+  box-shadow:
+    0 8px 16px rgba(0, 119, 255, 0.75),
+    0 0 8px rgba(0, 119, 255, 0.4);
 }
