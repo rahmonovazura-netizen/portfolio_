@@ -32,28 +32,26 @@ body {
 
 .main-header {
   width: 100%;
-  padding: 20px; 
+  padding: 20px;
   box-sizing: border-box;
 }
 
-
 .navbar {
   background: linear-gradient(180deg, #222222 0%, #111111 100%);
-  border-radius: 15px; 
+  border-radius: 15px;
   padding: 15px 30px;
-  border: 1px solid #333; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  border: 1px solid #333;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
-
 
 .nav-container {
   display: flex;
   align-items: center;
-  gap: 30px; 
+  gap: 30px;
 }
 
 .logo img {
-  height: 50px; 
+  height: 50px;
   display: block;
   border-radius: 10px;
   box-shadow:
@@ -69,7 +67,6 @@ body {
   padding: 0;
 }
 
-
 .nav-links a {
   color: #cccccc;
   text-decoration: none;
@@ -79,7 +76,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #fff200; 
+  color: #fff200;
 }
 
 .nav-btn {
@@ -201,10 +198,15 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-#family,
+#familiy,
 #friends {
-  padding: 80px 0;
-  background-color: #0b0c10;
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+.member-info {
+  flex: 1;
+  text-align: left;
 }
 
 .family-container,
@@ -236,12 +238,15 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 100px;
-  text-align: justify;
+  max-width: 1160px;
+  margin: 0 auto 30px auto;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 50px;
 }
-.family-member > *, 
+.family-member > *,
 .grupadoshlarim-member > * {
-    flex: 1; 
+  flex: 1;
 }
 
 .family-member:nth-child(even),
