@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fortfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <body>
     <main>
-      <nav class="navbar">
-        <div class="nav-container">
-          <a href="#" class="logo"><img src="./images/html.png" alt="" /></a>
-
-          <ul class="nav-links">
-            <li><a href="#about">O'zim haqimda</a></li>
-            <li><a href="#familiy">Oilam haqida</a></li>
-            <li><a href="#friends">Grupadoshlarim</a></li>
-            <li><a href="#projects">Qilgan ishlarimiz</a></li>
-          </ul>
-        </div>
-      </nav>
+      <header class="main-header">
+        <nav class="navbar">
+          <div class="nav-container">
+           
+            <a href="#" class="logo">
+              <img src="./images/html.png" alt="Logo" />
+            </a>
+            <ul class="nav-links">
+              <li><a href="#about">O'zim haqimda</a></li>
+              <li><a href="#familiy">Oilam haqida</a></li>
+              <li><a href="#friends">Grupadoshlarim</a></li>
+              <li><a href="#projects">Qilihan ishlarimiz</a></li>
+            </ul>
+             <button class="nav-btn">Aloqa</button>
+          </div>
+        </nav>
+        
+      </header>
       <!-- Ozim haqimda -->
       <section id="about">
         <div class="about__container">
@@ -31,7 +38,7 @@
             </h2>
             <p>Ustozim:Azizbek Tolipov</p>
           </div>
-          <div class="about__right">
+          <div class="about__right" data-aos="fade-down">
             <img src="./images/Men.jpg" alt="" />
           </div>
         </div>
@@ -41,7 +48,7 @@
         <div class="family-container">
           <h2 class="family-title">Oilam haqida</h2>
           <div class="family-member">
-            <div class="member-image">
+            <div class="member-image" data-aos="fade-left">
               <img src="./images/adam.jpg" alt="Otam" />
             </div>
             <div class="member-info">
@@ -54,7 +61,7 @@
           </div>
 
           <div class="family-member">
-            <div class="member-image">
+            <div class="member-image" data-aos="fade-right">
               <img src="./images/onam 2.jpg" alt="Onam" />
             </div>
             <div class="member-info">
@@ -66,7 +73,7 @@
             </div>
           </div>
 
-          <div class="family-member">
+          <div class="family-member" data-aos="fade-left">
             <div class="member-image">
               <img src="./images/olimjon.jpg" alt="Akam" />
             </div>
@@ -80,7 +87,7 @@
           </div>
 
           <div class="family-member">
-            <div class="member-image">
+            <div class="member-image" data-aos="fade-left">
               <img src="./images/singlim.jpg" alt="Singlim" />
             </div>
             <div class="member-info">
@@ -89,14 +96,14 @@
             </div>
           </div>
           <div class="family-member">
-            <div class="member-image">
+            <div class="member-image" data-aos="fade-left">
               <img src="./images/Buvijonim.jpg" alt="Buvijonim" />
             </div>
             <div class="member-info">
               <h3>Buvijonim</h3>
               <p>
                 Buvijonimni ismlari Zuhra <br />
-                ular "MCHJ" LOR OPTIMADA bosh hamshira bo'lib ishlaydilar
+                ular "MCHJ" LOR OPTIMA da bosh hamshira bo'lib ishlaydilar
               </p>
             </div>
           </div>
@@ -107,7 +114,7 @@
         <div class="grupadoshlarim-container">
           <h2 class="grupadoshlarim-title">Grupadoshlarim haqida</h2>
           <div class="grupadoshlarim-member">
-            <div class="member-image">
+            <div class="member-image" data-aos="flip-left">
               <img src="./images/botir 2.jpg" alt="" />
             </div>
             <div class="member-info">
@@ -117,7 +124,7 @@
           </div>
 
           <div class="grupadoshlarim-member">
-            <div class="member-image">
+            <div class="member-image" data-aos="flip-right">
               <img src="./images/Sulaymon.jpg" alt="" />
             </div>
             <div class="member-info">
@@ -127,7 +134,7 @@
           </div>
 
           <div class="grupadoshlarim-member">
-            <div class="member-image">
+            <div class="member-image" data-aos="flip-left">
               <img src="./images/Grupadoshim.jpg" alt="" />
             </div>
             <div class="member-info">
@@ -137,7 +144,7 @@
           </div>
 
           <div class="grupadoshlarim-member">
-            <div class="member-image">
+            <div class="member-image" data-aos="flip-right">
               <img src="./images/Muhammad Ali.jpg" alt="Singlim" />
             </div>
             <div class="member-info">
@@ -153,28 +160,28 @@
           <h2 class="projects-title">Qilingan ishlarimiz</h2>
 
           <div class="projects-grid">
-            <a href="./food.html" target="_blank" class="project-item">
+            <a href="./food.html" target="_blank" class="project-item" data-aos="zoom-in-down">
               <img src="./images/figma.png" alt="Healty food" />
               <div class="project-overlay">
                 <h3>Healthy food</h3>
               </div>
             </a>
 
-            <a href="./mebel.html" target="_blank" class="project-item">
+            <a href="./mebel.html" target="_blank" class="project-item" data-aos="zoom-in-down">
               <img src="./images/image.png" alt="Soft mebel" />
               <div class="project-overlay">
                 <h3>Soft mebel</h3>
               </div>
             </a>
 
-            <a href="./city.html" target="_blank" class="project-item">
+            <a href="./city.html" target="_blank" class="project-item" data-aos="zoom-in-down">
               <img src="./images/orqa fon.png" alt="City" />
               <div class="project-overlay">
                 <h3>City</h3>
               </div>
             </a>
 
-            <a href="./dragon.html" target="_blank" class="project-item">
+            <a href="./dragon.html" target="_blank" class="project-item" data-aos="zoom-in-down">
               <img src="./images/dragon.png" alt="Dragon slaydi" />
               <div class="project-overlay">
                 <h3>Dragon slayd</h3>
@@ -220,5 +227,9 @@
         </div>
       </footer>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
