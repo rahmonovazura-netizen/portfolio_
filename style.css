@@ -243,6 +243,7 @@ body {
   box-sizing: border-box;
   padding: 20px;
   gap: 50px;
+  overflow: hidden;
 }
 .family-member > *,
 .grupadoshlarim-member > * {
@@ -300,6 +301,132 @@ body {
   color: #b3b3b3;
   line-height: 1.8;
   margin: 0;
+}
+
+.minimal-contact-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minimal-contact-container {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.form-title {
+  color: #000000;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.minimal-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.form-left,
+.form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-right {
+  justify-content: space-between;
+}
+
+.minimal-input-group {
+  position: relative;
+  width: 100%;
+}
+
+.minimal-input-group input,
+.minimal-input-group textarea {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 1rem;
+  color: #000000;
+  outline: none;
+}
+
+.minimal-input-group textarea {
+  resize: none;
+}
+
+.minimal-input-group label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #777777;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.minimal-input-group input:focus ~ label,
+.minimal-input-group input:not(:placeholder-shown) ~ label,
+.minimal-input-group textarea:focus ~ label,
+.minimal-input-group textarea:not(:placeholder-shown) ~ label {
+  top: -15px;
+  font-size: 0.85rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+.minimal-input-group input:focus,
+.minimal-input-group textarea:focus {
+  border-bottom: 2px solid #000000;
+}
+
+.minimal-send-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.minimal-send-btn:hover {
+  background-color: #222222;
+  transform: translateY(-2px);
+}
+
+.minimal-send-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .minimal-form {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .minimal-contact-container {
+    padding: 25px;
+  }
+
+  .form-right {
+    gap: 30px;
+  }
 }
 
 #projects {

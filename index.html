@@ -13,7 +13,6 @@
       <header class="main-header">
         <nav class="navbar">
           <div class="nav-container">
-           
             <a href="#" class="logo">
               <img src="./images/html.png" alt="Logo" />
             </a>
@@ -23,10 +22,9 @@
               <li><a href="#friends">Grupadoshlarim</a></li>
               <li><a href="#projects">Qilihan ishlarimiz</a></li>
             </ul>
-             <button class="nav-btn">Aloqa</button>
+            <button class="nav-btn">Aloqa</button>
           </div>
         </nav>
-        
       </header>
       <!-- Ozim haqimda -->
       <section id="about">
@@ -154,34 +152,99 @@
           </div>
         </div>
       </section>
+
+      <!-- Skills -->
+      <section class="minimal-contact-section">
+        <div class="minimal-contact-container">
+          <h2 class="form-title">Bog'lanish</h2>
+
+          <form class="minimal-form">
+            <div class="form-left">
+              <div class="minimal-input-group">
+                <input type="text" id="name" required placeholder=" " />
+                <label for="name">Ismingiz</label>
+              </div>
+
+              <div class="minimal-input-group">
+                <input type="email" id="email" required placeholder=" " />
+                <label for="email">Email manzilingiz</label>
+              </div>
+
+              <div class="minimal-input-group">
+                <input type="tel" id="phone" required placeholder=" " />
+                <label for="phone">Telefon raqamingiz</label>
+              </div>
+
+              <div class="minimal-input-group">
+                <input type="text" id="subject" required placeholder=" " />
+                <label for="subject">Mavzu</label>
+              </div>
+            </div>
+
+            <div class="form-right">
+              <div class="minimal-input-group textarea-group">
+                <textarea
+                  id="message"
+                  required
+                  placeholder=" "
+                  rows="6"
+                ></textarea>
+                <label for="message">Xabaringiz</label>
+              </div>
+
+              <button type="submit" class="minimal-send-btn">Yuborish📩</button>
+            </div>
+          </form>
+        </div>
+      </section>
       <!-- Projects -->
       <section id="projects">
         <div class="projects-container">
           <h2 class="projects-title">Qilingan ishlarimiz</h2>
 
           <div class="projects-grid">
-            <a href="./food.html" target="_blank" class="project-item" data-aos="zoom-in-down">
+            <a
+              href="./food.html"
+              target="_blank"
+              class="project-item"
+              data-aos="zoom-in-down"
+            >
               <img src="./images/figma.png" alt="Healty food" />
               <div class="project-overlay">
                 <h3>Healthy food</h3>
               </div>
             </a>
 
-            <a href="./mebel.html" target="_blank" class="project-item" data-aos="zoom-in-down">
+            <a
+              href="./mebel.html"
+              target="_blank"
+              class="project-item"
+              data-aos="zoom-in-down"
+            >
               <img src="./images/image.png" alt="Soft mebel" />
               <div class="project-overlay">
                 <h3>Soft mebel</h3>
               </div>
             </a>
 
-            <a href="./city.html" target="_blank" class="project-item" data-aos="zoom-in-down">
+            <a
+              href="./city.html"
+              target="_blank"
+              class="project-item"
+              data-aos="zoom-in-down"
+            >
               <img src="./images/orqa fon.png" alt="City" />
               <div class="project-overlay">
                 <h3>City</h3>
               </div>
             </a>
 
-            <a href="./dragon.html" target="_blank" class="project-item" data-aos="zoom-in-down">
+            <a
+              href="./dragon.html"
+              target="_blank"
+              class="project-item"
+              data-aos="zoom-in-down"
+            >
               <img src="./images/dragon.png" alt="Dragon slaydi" />
               <div class="project-overlay">
                 <h3>Dragon slayd</h3>
@@ -231,5 +294,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="./script.js"></script>
   </body>
 </html>
