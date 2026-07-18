@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <body>
     <main>
+      <!-- Menu qismi -->
       <header class="main-header">
         <nav class="navbar">
           <div class="nav-container">
@@ -22,7 +23,7 @@
               <li><a href="#friends">Grupadoshlarim</a></li>
               <li><a href="#projects">Qilihan ishlarimiz</a></li>
             </ul>
-            <button class="nav-btn">Aloqa</button>
+            <a href="#contact"><button class="nav-btn">Aloqa</button></a>
           </div>
         </nav>
       </header>
@@ -41,6 +42,30 @@
           </div>
         </div>
       </section>
+
+      <!-- Qiziqishlar haqida -->
+      <section id="interests">
+        <h2>Mening qiziqishlarim</h2>
+        <div class="interests-container">
+          <div class="interest-item" data-aos="fade-right" data-aos="zoom-in-down">
+            <img src="./images/footbal.jpg" alt="Football" />
+            <h3>Futbol</h3>
+          </div>
+          <div class="interest-item" data-aos="fade-right" data-aos="zoom-in-down">
+            <img src="./images/voleyball.jpg" alt="Voleyball" />
+            <h3>Voleyball</h3>
+          </div>
+          <div class="interest-item" data-aos="fade-right" data-aos="zoom-in-down">
+            <img src="./images/duo.png" alt="Football" />
+            <h3>CS2 CS1.6</h3>
+          </div>
+          <div class="interest-item" data-aos="fade-right" data-aos="zoom-in-down">
+            <img src="./images/IT.jpg" alt="Football" />
+            <h3>IT</h3>
+          </div>
+        </div>
+      </section>
+
       <!-- Oilam haqida -->
       <section id="familiy">
         <div class="family-container">
@@ -153,50 +178,6 @@
         </div>
       </section>
 
-      <!-- Skills -->
-      <section class="minimal-contact-section">
-        <div class="minimal-contact-container">
-          <h2 class="form-title">Bog'lanish</h2>
-
-          <form class="minimal-form">
-            <div class="form-left">
-              <div class="minimal-input-group">
-                <input type="text" id="name" required placeholder=" " />
-                <label for="name">Ismingiz</label>
-              </div>
-
-              <div class="minimal-input-group">
-                <input type="email" id="email" required placeholder=" " />
-                <label for="email">Email manzilingiz</label>
-              </div>
-
-              <div class="minimal-input-group">
-                <input type="tel" id="phone" required placeholder=" " />
-                <label for="phone">Telefon raqamingiz</label>
-              </div>
-
-              <div class="minimal-input-group">
-                <input type="text" id="subject" required placeholder=" " />
-                <label for="subject">Mavzu</label>
-              </div>
-            </div>
-
-            <div class="form-right">
-              <div class="minimal-input-group textarea-group">
-                <textarea
-                  id="message"
-                  required
-                  placeholder=" "
-                  rows="6"
-                ></textarea>
-                <label for="message">Xabaringiz</label>
-              </div>
-
-              <button type="submit" class="minimal-send-btn">Yuborish📩</button>
-            </div>
-          </form>
-        </div>
-      </section>
       <!-- Projects -->
       <section id="projects">
         <div class="projects-container">
@@ -253,6 +234,52 @@
           </div>
         </div>
       </section>
+
+       <!-- contact -->
+      <section class="minimal-contact-section" id="contact">
+        <div class="minimal-contact-container">
+          <h2 class="form-title">Bog'lanish</h2>
+
+          <form class="minimal-form">
+            <div class="form-left">
+              <div class="minimal-input-group">
+                <input type="text" id="name" required placeholder=" " />
+                <label for="name">Ismingiz</label>
+              </div>
+
+              <div class="minimal-input-group">
+                <input type="email" id="email" required placeholder=" " />
+                <label for="email">Email manzilingiz</label>
+              </div>
+
+              <div class="minimal-input-group">
+                <input type="tel" id="phone" required placeholder=" " />
+                <label for="phone">Telefon raqamingiz</label>
+              </div>
+
+              <div class="minimal-input-group">
+                <input type="text" id="subject" required placeholder=" " />
+                <label for="subject">Mavzu</label>
+              </div>
+            </div>
+
+            <div class="form-right">
+              <div class="minimal-input-group textarea-group">
+                <textarea
+                  id="message"
+                  required
+                  placeholder=" "
+                  rows="6"
+                ></textarea>
+                <label for="message">Xabaringiz</label>
+              </div>
+
+              <button type="submit" class="minimal-send-btn">Yuborish📩</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
       <footer class="site-footer">
         <div class="footer-container">
           <div class="footer-column brand-column">
@@ -294,6 +321,5 @@
     <script>
       AOS.init();
     </script>
-    <script src="./script.js"></script>
   </body>
 </html>
