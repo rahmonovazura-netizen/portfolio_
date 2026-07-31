@@ -1,9 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ scroll-behavior: auto;
 }
 
 body {
@@ -11,6 +10,8 @@ body {
   margin: 0;
   padding: 40px 0;
 }
+
+
 
 .navbar {
   position: fixed;
@@ -20,8 +21,8 @@ body {
   width: 95%;
   max-width: 1400px;
   background: rgba(15, 15, 15, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 12px 40px;
